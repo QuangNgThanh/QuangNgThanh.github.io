@@ -555,6 +555,11 @@
         <script src="js/jquery.backstretch.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/custom.js"></script>
+        <script>
+            if (location.protocol !== 'https:') {
+              location.replace(`https:${location.href.substring(location.protocol.length)}`);
+            }
+        </script>
 
     </body>
 </html>
